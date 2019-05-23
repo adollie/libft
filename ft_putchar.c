@@ -6,13 +6,13 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 10:51:47 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/23 10:54:17 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/23 10:58:00 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar(char c)
 {
-	write(1, &c, 1);
+	ft_putchar_fd(c, 1);
 }
