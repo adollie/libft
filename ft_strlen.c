@@ -6,13 +6,13 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:18:06 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/21 09:22:41 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/24 11:37:30 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const chart *str)
+size_t	ft_strlen(const char *str)
 {
 	int	len;
 
