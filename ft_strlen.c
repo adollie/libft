@@ -6,7 +6,7 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 09:18:06 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/24 11:37:30 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 12:00:51 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	int	len;
 
 	len = 0;
-	while (str[len])
+	while (str[len] != '\0')
 		len++;
 	return (len);
 }
