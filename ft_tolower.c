@@ -6,7 +6,7 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:13:34 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/22 11:14:47 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 15:22:02 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_tolower(int c)
 {
-	if (ft_isupper(c))
-		return (c + 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 'a' - 'A');
 	return (c);
 }
