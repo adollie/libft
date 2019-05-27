@@ -6,19 +6,18 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:23:13 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/22 11:25:13 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 15:05:39 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_memalloc(size_t size)
 {
-	void	*mem;
+	void	*magic;
 
-	if (!(mem = malloc(size)))
-		return (NULL);
-	ft_bzero(mem, size);
-	return (mem);
+	magic = malloc(size);
+	if (magic)
+		ft_bzero(magic, size);
+	return (magic);
 }
