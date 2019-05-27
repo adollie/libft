@@ -6,7 +6,7 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:59:59 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/22 11:00:53 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 15:11:57 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int		ft_isalpha(int c)
 {
-	return (ft_islower(c) || ft_isupper(c));
+	if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))
+		return (1);
+	return (0);
 }
