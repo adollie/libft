@@ -6,25 +6,25 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:02:19 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/21 10:06:50 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 13:48:21 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, const char *src)
-{
-	unsigned int	i;
-	unsigned int	j;
+#include "libft.h"
 
-	i = 0;
-	while (dest[i] != '\0')
-		++i;
-	i = 0;
-	while (src[j] != '\0')
+char	*ft_strcat(char *restrict s1, const char *restrict s2)
+{
+	char	*s1alt;
+
+	s1alt = s1;
+	while (*s1alt != '\0')
+		s1alt++;
+	while (*s2 != '\0')
 	{
-		dest[i] = src[j];
-		i++;
-		++j;
+		*s1alt = *s2;
+		s1alt++;
+		s2++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	*s1alt = '\0';
+	return (s1);
 }
