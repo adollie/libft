@@ -6,7 +6,7 @@
 /*   By: adollie <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:23:01 by adollie           #+#    #+#             */
-/*   Updated: 2019/05/23 09:26:33 by adollie          ###   ########.fr       */
+/*   Updated: 2019/05/27 15:32:26 by adollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_strequ(char const *s1, char const *s2)
 	i = 0;
 	if (!s1 || !s2)
 		return (s1 == s2 ? 1 : 0);
-	if (ft_strlen((char*)s1) != ft_strlen((chra*)s2))
+	if (ft_strlen((char*)s1) != ft_strlen((char*)s2))
 		return (0);
 	while (s1[i] && s2[i])
 	{
